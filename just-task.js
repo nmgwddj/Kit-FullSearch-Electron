@@ -8,7 +8,7 @@ task('install', () => {
     const curPkgMeta = require(path.join(__dirname, 'package.json'))
     const localPath = path.join(__dirname, 'lib')
     // const downloadUrl = `http://yx-web.nos.netease.com/package/electron-tokenizer-plugin_v${curPkgMeta.version}.tar.gz`
-    const downloadUrl = `http://yx-web.nos.netease.com/package/electron-tokenizer-plugin_v2.1.1.tar.gz`
+    const downloadUrl = `https://yx-web-nosdn.netease.im/package/electron-tokenizer-plugin_v2.2.1.zip`
     download(downloadUrl, localPath, {
       extract: true
     }).then(() => {
